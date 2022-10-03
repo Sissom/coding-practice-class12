@@ -1,0 +1,4 @@
+<h1 class="text-primary" [ngClass]="person.age === 39 ? 'bg-dark' : 'bg-light'">My name is {{ person.firstName }} {{ person.lastName }}, and I am {{ person.age }}.</h1>
+<button class="btn btn-danger" (click)="displayText">DON'T CLICK ME!</button>
+<p
+*ngIf="displayText">You shouldn't have clicked me</p>
